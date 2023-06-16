@@ -14,5 +14,5 @@ app.use("/api/",countRoutes)
 // })
 
 app.listen(PORT,()=>{
-    console.log(`app is running at port ${PORT}`);
+    console.log(`app is running successfully`);
 })
