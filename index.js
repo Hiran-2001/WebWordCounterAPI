@@ -8,10 +8,9 @@ app.use(express.json())
 app.use(cors());
 const PORT = process.env.PORT || 5000
 connectToMongo()
+
 app.use("/api/",countRoutes)
-// app.get("/user",(req,res)=>{
-// res.send("hello working")
-// })
+
 
 app.listen(PORT,()=>{
     console.log(`app is running successfully`);
