@@ -61,8 +61,8 @@ exports.getPrevious = async (req, res) => {
 exports.deleteUrl = async (req, res) => {
     try {
         const { id } = req.params
-        const deleteUser = await urlModel.findByIdAndDelete({ _id: id })
-        if (!deleteUser) {
+        const deleteRes = await urlModel.findByIdAndDelete({ _id: id })
+        if (!deleteRes) {
             res.status.json({
                 message: "no url found to delete"
             })
